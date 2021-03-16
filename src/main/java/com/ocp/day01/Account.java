@@ -1,7 +1,14 @@
 package com.ocp.day01;
 
 public class Account {
-    int balance;//帳戶餘額
+    private int balance;//帳戶餘額
+    
+    //查詢帳戶餘額
+    public int getBalance() {
+        return balance;
+    }
+
+   
     void withdraw(int money){//提款方法
          //驗證 money 是否符合條件
         if(money <= 0 ){
