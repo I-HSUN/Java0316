@@ -17,8 +17,17 @@ public class Bank {
         System.out.printf("a01帳戶餘額: $%,d \n", a01.balance);
         //提款
         System.out.println("a02提款800元後...");
-        a02.deposit(800);
+        a02.withdraw(800);
         System.out.printf("a02帳戶餘額: $%,d \n", a02.balance);
+        //存款
+        System.out.println("a03存款-1200元後....");
+        a03.deposit(-1200);
+        System.out.printf("a03帳戶餘額: $%,d \n", a03.balance);
+        //提款
+        System.out.println("a03提款5000元後....");
+        a03.withdraw(5000);
+        System.out.printf("a03帳戶餘額: $%,d \n", a03.balance);
+        
     }
     
 }
