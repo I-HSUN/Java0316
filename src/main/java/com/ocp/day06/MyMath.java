@@ -31,4 +31,24 @@ public class MyMath {
         double cv = sd/avg;
         return cv;
     }
+    public static double max(double[] nums) {
+        double max = nums[0];//取Double最小
+   
+        for (double n : nums) {
+            if (n > max) {
+                max = n;
+            }
+        }
+        return max;
+    }
+    public static double min(double[] nums) {
+        double min =nums[0];
+   
+        for (double n : nums) {
+            if (n < min) {
+                min = n;
+            }
+        }
+        return min;
+    }
 }

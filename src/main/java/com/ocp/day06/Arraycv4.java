@@ -18,6 +18,8 @@ public class Arraycv4 {
         double[] bonds = {6.8, 7.2, 6.8, 7.5, 6.9, 7.9, 7.9, 7.1, 7.2};
         double stock_cv =MyMath.cv(stock);
         double bonds_cv =MyMath.cv(bonds);
+        System.out.printf("最大獲利 : %.1f 最小獲利: %.1f \n",MyMath.max(stock),MyMath.min(stock));
+//        System.out.println();
         String result = (stock_cv < bonds_cv) ?"股票":"公債";
         System.out.printf("股票 cv : %.2f%% 公債 cv : %.2f%% %s集中度較高", stock_cv*100 , bonds_cv*100 ,result);
     }
