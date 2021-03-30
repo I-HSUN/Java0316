@@ -1,5 +1,8 @@
 package com.ocp.day06;
 
+import java.util.Arrays;
+import java.util.stream.Stream;
+
 public class ArrayBMICV {
     public static void main(String[] args) {
         String[] names = {"A","B","C","D","E"};
@@ -15,7 +18,11 @@ public class ArrayBMICV {
         for (Person p : persons) {
             System.out.printf("bmi : %.1f\n",p.bmi);
         }
-        
-        
+        double[] bmis = new double[5];
+        for (int i = 0; i < persons.length; i++) {
+            bmis[i] = persons[i].bmi;
+        }
+        double bmi_cv = MyMath.cv(bmis);
+        System.out.printf("BMI_CV : %.2f%% \n",bmi_cv*100);
     }
 }
