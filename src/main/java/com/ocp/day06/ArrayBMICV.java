@@ -8,6 +8,7 @@ public class ArrayBMICV {
         String[] names = {"A","B","C","D","E"};
         double[] h = {172,168,164,170,176};
         double[] w = {62,57,58,64,64};
+
         Person[] persons =new Person[5];
         
         for (int i = 0; i < persons.length; i++) {
