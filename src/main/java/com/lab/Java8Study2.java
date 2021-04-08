@@ -4,18 +4,17 @@ import java.util.stream.IntStream;
 
 public class Java8Study2 {
     public static void main(String[] args) {
-        int[] scores = {80,70,50,40,90};
-        //列印及格分數
-        //Java 7
-        for (int i = 0; i < scores.length; i++) {
-            if (scores[i]>60) {
-                System.out.println(scores[i]);
+        int[] scores = {80, 50, 70, 90, 40};
+        // 列印及格的分數
+        // java 7
+        for(int s : scores) { // foreach
+            if(s >= 60) { // 過濾條件 filter
+                System.out.println(s);
             }
         }
-        //java8
+        // java 8
         IntStream.of(scores)
-                .filter(i -> i >=60)
-                .forEach(s ->System.out.println(s));
+                .filter(s -> s >= 60)
+                .forEach(s -> System.out.println(s));
     }
-    
 }

@@ -1,5 +1,5 @@
 package com.ocp.day04.foo;
 
 public class Money {
-    public int amount = 2000000;    
+    public int amount = 200_0000;
 }
