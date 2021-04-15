@@ -1,8 +1,14 @@
 package com.ocp.day11;
 
 public class OverloadingDemo {
-   public void calc(int x){
+   public void calc(short x){
+       System.out.println("short:"+x);
+   }
+    public void calc(int x){
        System.out.println("int:"+x);
+   }
+    public void calc(long x){
+       System.out.println("long:"+x);
    }
     public void calc(Integer x){
        System.out.println("Integer:"+x);
@@ -17,5 +23,4 @@ public class OverloadingDemo {
         OverloadingDemo o = new OverloadingDemo();
         o.calc(100);
     }
-    
 }
