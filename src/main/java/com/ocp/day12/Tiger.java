@@ -5,4 +5,7 @@ public class Tiger extends Cat{
     public void shout() {
         System.out.println("吼~~~");
     }
+    public void Hunter(){
+        System.out.println("獵殺");
+    }
 }
