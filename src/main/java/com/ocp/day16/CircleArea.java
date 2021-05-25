@@ -1,6 +1,6 @@
 package com.ocp.day16;
 
-//園面積/體積
+// 圓面積/體積
 public interface CircleArea {
-     double getArea(double r);
+    double getArea(double r);
 }

@@ -3,13 +3,13 @@ package com.lab.order_system;
 import java.util.Objects;
 
 public class Food {
-    private int no;//餐點編號
+    private int no; // 餐點編號
     private String name;
     private char size;
     private int price;
 
     public Food(int no, String name, char size, int price) {
-        if (name.length() == 3) {
+        if(name.length() == 3) {
             name = name.concat("　");
         }
         this.no = no;
@@ -20,7 +20,7 @@ public class Food {
 
     @Override
     public int hashCode() {
-        int hash = 5;
+        int hash = 7;
         hash = 29 * hash + this.no;
         hash = 29 * hash + Objects.hashCode(this.name);
         hash = 29 * hash + this.size;
@@ -91,7 +91,8 @@ public class Food {
     public String toString() {
         return "Food{" + "no=" + no + ", name=" + name + ", size=" + size + ", price=" + price + '}';
     }
-
+    
+    
     
     
 }

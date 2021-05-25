@@ -1,26 +1,28 @@
-package com.ocp.day11;
+package com.ocp.day12;
 
-class Father{
+class Father {
     Father() {
-        System.out.println("Father" );
+        System.out.println("Father");
     }
     Father(int x) {
         this();
         System.out.println("Father: " + x);
     }
 }
-class Son extends Father{
+
+class Son extends Father {
     Son() {
         this(100);
         System.out.println("Son");
     }
     Son(int x) {
         super(x);
-        System.out.println("Son:"+x);
+        System.out.println("Son: " + x);
     }
 }
+
 public class Family {
     public static void main(String[] args) {
-    Son son = new Son();        
+        Son son = new Son();
     }
 }

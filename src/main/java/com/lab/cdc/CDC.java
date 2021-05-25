@@ -7,8 +7,8 @@ public class CDC {
     private String alert_disease;
     private String areaDesc;
     private String circle;
-    //加值資料
-    private double distance;//距離
+    // 加值資料
+    private double distance; // 距離
 
     public String getSent() {
         return sent;
@@ -70,5 +70,5 @@ public class CDC {
     public String toString() {
         return "CDC{" + "sent=" + sent + ", headline=" + headline + ", description=" + description + ", alert_disease=" + alert_disease + ", areaDesc=" + areaDesc + ", circle=" + circle + ", distance=" + distance + '}';
     }
- 
+    
 }

@@ -3,6 +3,7 @@ package com.ocp.day18;
 import java.util.Arrays;
 import java.util.IntSummaryStatistics;
 import java.util.function.Consumer;
+import java.util.function.Predicate;
 
 public class School {
     public static void main(String[] args) {
@@ -13,19 +14,20 @@ public class School {
         IntSummaryStatistics state = Arrays.stream(DataCenter.getPeople())
                 .filter(x -> x instanceof Student)
                 .map(x -> (Student)x)
-                .mapToInt(x -> x.getScores())
+                .mapToInt(x -> x.getScore())
                 .summaryStatistics();
         System.out.println(state.getSum());
         System.out.println(state.getAverage());
         
         // 印出不及格的學生,分數,老師與總平均
-        Consumer<Student> p=x -> System.out.printf("學生:%s, 分數:%d, 老師:%s\n", x.getName(), x.getScores(), x.getTeacher().getName());
+        Consumer<Student> p = x -> System.out.printf("學生:%s, 分數:%d, 老師:%s\n", x.getName(), x.getScore(), x.getTeacher().getName());
+        Predicate<Student> notPass = x -> x.getScore() < 60;
         double avg = Arrays.stream(DataCenter.getPeople())
                 .filter(x -> x instanceof Student)
                 .map(x -> (Student)x)
-                .filter(x -> x.getScores()< 60)
+                .filter(notPass)
                 .peek(p)
-                .mapToInt(Student::getScores)
+                .mapToInt(Student::getScore)
                 .average()
                 .getAsDouble();
         System.out.println("不及格平均: " + avg);

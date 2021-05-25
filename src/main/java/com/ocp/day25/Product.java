@@ -1,8 +1,9 @@
 package com.ocp.day25;
 
+// 商品
 public class Product {
-    private String name;
-    private int price;
+    private String name; // 品名
+    private int price; // 價格
 
     public Product(String name, int price) {
         this.name = name;
@@ -29,5 +30,6 @@ public class Product {
     public String toString() {
         return "Product{" + "name=" + name + ", price=" + price + '}';
     }
+    
     
 }

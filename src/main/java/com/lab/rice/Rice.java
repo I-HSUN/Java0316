@@ -40,7 +40,7 @@ public class Rice {
 
     @Override
     public String toString() {
-        return "RICE{" + "\u54c1\u540d=" + 品名 + ", \u5ee0\u5546\u540d\u7a31=" + 廠商名稱 + ", \u4e0d\u5408\u683c\u539f\u56e0=" + 不合格原因 + ", \u884c\u653f\u8655\u5206=" + 行政處分 + '}';
+        return "Rice{" + "\u54c1\u540d=" + 品名 + ", \u5ee0\u5546\u540d\u7a31=" + 廠商名稱 + ", \u4e0d\u5408\u683c\u539f\u56e0=" + 不合格原因 + ", \u884c\u653f\u8655\u5206=" + 行政處分 + '}';
     }
     
 }

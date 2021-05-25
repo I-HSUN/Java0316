@@ -4,13 +4,12 @@ public class Zoo {
     public static void main(String[] args) {
         Cat cat = new Cat();
         cat.shout();
-       // cat.Hunter();//因為 cat 裡面沒有Hunter()
-       Tiger tiger = new Tiger();
-       tiger.shout();
-       tiger.Hunter();
-       Cat cat2 = new Tiger();
-       //cat2.Hunter();//Cat裡面沒有 Hunter()
-       cat2.shout();
+        //cat.hunter(); // 因為 Cat 裡面沒有 hunter()
+        Tiger tiger = new Tiger();
+        tiger.shout();
+        tiger.hunter();
+        Cat cat2 = new Tiger();
+        //cat2.hunter(); // 因為 Cat 裡面沒有 hunter()
+        cat2.shout();
     }
-    
 }

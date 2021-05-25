@@ -4,9 +4,8 @@ public class MonkeyWeek {
     public static void main(String[] args) {
         work(Week.MON);
     }
-
-    public static  void work(Week week) {
-        switch(week){
+    public static void work(Week week) {
+        switch(week) {
             case MON:
                 System.out.println("猴子穿新衣");
                 break;
@@ -15,5 +14,4 @@ public class MonkeyWeek {
                 break;
         }
     }
-    
 }

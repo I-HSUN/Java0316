@@ -5,12 +5,10 @@ import java.util.TreeMap;
 
 public class MapDemo3 {
     public static void main(String[] args) {
-        Map<Integer,String>students = new TreeMap<>();
+        Map<Integer, String> students = new TreeMap<>();
         students.put(3, "Mary");
-        students.put(1, "Jhon");
-        students.put(2,"Helen");
+        students.put(1, "John");
+        students.put(2, "Helen");
         System.out.println(students);
-        
     }
-    
 }

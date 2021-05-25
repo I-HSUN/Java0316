@@ -6,17 +6,17 @@ import java.util.TreeSet;
 
 public class SetDemo5 {
     public static void main(String[] args) {
-        //排序性(小 -> 大)
-        Set <Integer> num = new TreeSet<>();
-        //1~9任意5個
+        // 排序性(小 -> 大)
+        Set<Integer> nums = new TreeSet<>();
+        // 1~9 任意 5 個
         Random r = new Random();
-        while (num.size()<7) {
-            int n=r.nextInt(9)+1;
-            System.out.println("n:"+ n);
-            num.add(n);
+        while(nums.size() < 7) {
+            int n = r.nextInt(9) + 1;
+            System.out.println("n: " + n);
+            nums.add(n);
         }
-        System.out.println(num);
+        System.out.println(nums);
+        
         
     }
-    
 }

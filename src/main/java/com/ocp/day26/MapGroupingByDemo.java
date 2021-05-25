@@ -1,9 +1,8 @@
 package com.ocp.day26;
 
-//分組
+// 資料分組
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Function;
@@ -19,18 +18,24 @@ public class MapGroupingByDemo {
         names.add("orange");
         names.add("papaya");
         names.add("banana");
+        // apple=3, banana=2, orange=1, papaya=1
+        // 分組
         System.out.println(
-                names.stream()
-                    .collect(Collectors.groupingBy(name -> name, Collectors.counting()))
+            names.stream()
+                .collect(Collectors.groupingBy(name -> name, Collectors.counting()))
         );
+        
         System.out.println(
-                names.stream()
-                    .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
+            names.stream()
+                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
         );
-        Map<String,Long> result = names.stream()
+        // {papaya=1, orange=1, banana=2, apple=3} = Map<String, Long>   
+        
+        Map<String, Long> result = names.stream()
                 .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
         System.out.println(result);
-     
+        
     }
-    
 }
+
+

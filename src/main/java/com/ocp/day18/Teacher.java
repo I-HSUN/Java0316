@@ -1,6 +1,6 @@
 package com.ocp.day18;
 
-public class Teacher extends Person{
+public class Teacher extends Person {
     private int salary;
 
     public Teacher() {
@@ -23,6 +23,5 @@ public class Teacher extends Person{
     public String toString() {
         return "Teacher{" + "salary=" + salary + '}';
     }
-    
     
 }

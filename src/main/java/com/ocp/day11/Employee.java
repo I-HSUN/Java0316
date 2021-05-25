@@ -1,6 +1,6 @@
 package com.ocp.day11;
 
-public class Employee{
+public class Employee {
     private int salary;
 
     public int getSalary() {
@@ -17,4 +17,3 @@ public class Employee{
     }
     
 }
-    

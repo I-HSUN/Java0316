@@ -8,6 +8,6 @@ public class LottoDemo {
         System.out.println("小華回報今日四星彩開獎: " + b.getValue());
         Lotto c = Lotto.getLotto();
         System.out.println("小英回報今日四星彩開獎: " + c.getValue());
+        
     }
-    
 }

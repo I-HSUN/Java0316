@@ -1,19 +1,19 @@
 package com.ocp.day11;
 
-public class Manager extends Employee{
-    private int budger;
+public class Manager extends Employee {
+    private int budget;
 
-    public int getBudger() {
-        return budger;
+    public int getBudget() {
+        return budget;
     }
 
-    public void setBudger(int budger) {
-        this.budger = budger;
+    public void setBudget(int budget) {
+        this.budget = budget;
     }
 
     @Override
     public String toString() {
-        return "Manager{" + "budger=" + budger +", salary = " + getSalary() + '}' ;
+        return "Manager{" + "budget=" + budget + ", salary=" + getSalary() + '}';
     }
     
 }

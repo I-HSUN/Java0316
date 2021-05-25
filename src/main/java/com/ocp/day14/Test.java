@@ -1,7 +1,6 @@
 package com.ocp.day14;
 
 import java.util.IntSummaryStatistics;
-import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class Test {
@@ -9,17 +8,17 @@ public class Test {
         Employee e1 = new PG();
         e1.setSalary(50000);
         Employee e2 = new PG(70000);
-        
         Employee e3 = new Art(28000);
         Employee e4 = new Art();
         e4.setSalary(60000);
-        //印出每個人的工作
-        Employee[]emp ={e1,e2,e3,e4};
-        Stream.of(emp).forEach(e->e.job());
-        //印出總薪資與平均薪資
-        IntSummaryStatistics  stat= Stream.of(emp).mapToInt(Employee::getSalary).summaryStatistics();
+        // 印出每一個人的工作
+        Employee[] employees = {e1, e2, e3, e4};
+        Stream.of(employees).forEach(e -> e.job());
+        // 請求出總薪資與平均薪資
+        IntSummaryStatistics stat = Stream.of(employees)
+                    .mapToInt(Employee::getSalary) // e -> e.getSalary()
+                    .summaryStatistics();
         System.out.println(stat.getSum());
         System.out.println(stat.getAverage());
     }
-    
 }

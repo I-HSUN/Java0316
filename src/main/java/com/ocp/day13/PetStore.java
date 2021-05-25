@@ -17,8 +17,9 @@ public class PetStore {
         System.out.println(Dog.legs);
         System.out.println(Cat.legs);
         System.out.println(EPet.legs);
-        Pet[]pets = {a1,a2,a3};
+        // 每一個寵物吃些什麼 ?
+        Pet[] pets = {a1, a2, a3};
         Stream.of(pets).forEach(p -> p.eat());
     }
-    
 }
+

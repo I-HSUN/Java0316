@@ -1,6 +1,6 @@
 package com.ocp.day11;
 
-public class Director extends Manager{
+public class Director extends Manager {
     private int stockOption;
 
     public int getStockOption() {
@@ -13,7 +13,7 @@ public class Director extends Manager{
 
     @Override
     public String toString() {
-        return "Director{" + "stockOption=" + stockOption +", Salary = " + getSalary() + ", Budger = " + getBudger() +'}';
+        return "Director{" + "stockOption=" + stockOption + ", budget=" + getBudget() + ", salary=" + getSalary() +  '}';
     }
     
 }

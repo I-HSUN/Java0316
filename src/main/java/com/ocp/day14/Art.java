@@ -1,6 +1,6 @@
 package com.ocp.day14;
 
-public class Art extends Employee{
+public class Art extends Employee {
 
     public Art() {
     }

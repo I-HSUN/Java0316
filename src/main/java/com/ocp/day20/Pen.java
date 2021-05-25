@@ -3,7 +3,7 @@ package com.ocp.day20;
 import java.util.Objects;
 
 public class Pen {
-    private  String color;
+    private String color;
     private int price;
 
     public Pen(String color, int price) {
@@ -14,8 +14,8 @@ public class Pen {
     @Override
     public int hashCode() {
         int hash = 7;
-        hash = 19 * hash + Objects.hashCode(this.color);
-        hash = 19 * hash + this.price;
+        hash = 67 * hash + Objects.hashCode(this.color);
+        hash = 67 * hash + this.price;
         return hash;
     }
 
@@ -39,12 +39,12 @@ public class Pen {
         }
         return true;
     }
-    
 
+    
+        
     @Override
     public String toString() {
         return "Pen{" + "color=" + color + ", price=" + price + '}';
     }
-
-
+    
 }
