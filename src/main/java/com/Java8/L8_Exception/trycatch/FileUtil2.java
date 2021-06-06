@@ -10,7 +10,7 @@ public class FileUtil2 {
             Scanner console = new Scanner(new FileInputStream(name));
             while (console.hasNext()) {                
                 text.append(console.nextLine()).append('\n');
-            }
+            }   
         
         return text.toString();
     }
