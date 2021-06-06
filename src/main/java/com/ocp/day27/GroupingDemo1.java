@@ -32,10 +32,10 @@ public class GroupingDemo1 {
                 .forEach(System.out::println);
         
         // value 大 -> 小 列出並存放在 finalMap 裡
-        Map<String, Long> finalMap = new LinkedHashMap<>();
+        Map<Long, String> finalMap = new LinkedHashMap<>();
         result.entrySet().stream()
                 .sorted(Map.Entry.<String, Long>comparingByValue().reversed())
-                .forEachOrdered(entry -> finalMap.put(entry.getKey(), entry.getValue()));
+                .forEachOrdered(entry -> finalMap.put(entry.getValue(),entry.getKey() ));
         System.out.println("finalMap: " + finalMap);
     }
 }
